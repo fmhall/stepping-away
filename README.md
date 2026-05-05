@@ -2,6 +2,7 @@
 
 <img width="2172" height="167" alt="stepping-away-highres-13x1-fullwidth" src="https://github.com/user-attachments/assets/d7dbad57-b338-4ec2-bd96-18322650c3c9" />
 
+<br/>
 
 A [Claude Code](https://claude.com/claude-code) skill that lets you step away from your machine and have Claude keep working on whatever it was doing — bounded by a wall-clock deadline, with a clean stop and summary when time's up.
 
