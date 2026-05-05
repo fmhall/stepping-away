@@ -1,6 +1,29 @@
 ---
 name: stepping-away
 description: Activate autonomous work mode for a fixed duration when the user steps away. Use this whenever the user invokes /stepping-away with a minutes argument (e.g., "/stepping-away 5"), or says natural variants like "afk for 10", "stepping out for 5 — keep going", "be back in N min, keep working", "bio break, continue without me". Sets up a deadline-bounded autonomous loop using Monitor (heartbeat + stop signal) and ScheduleWakeup (self-paced continuous-work engine), so Claude keeps making forward progress on the in-flight task until the timer expires, then halts cleanly with a summary. Do NOT use this for indefinite background work, ralph-style infinite loops, or anything not anchored to a specific user step-away — this skill is bounded by wall-clock and tied to the user being temporarily AFK.
+argument-hint: "[minutes: 1|3|5|10|15|30]"
+retrieval:
+  aliases:
+    - stepping away
+    - afk
+    - bio break
+    - brb
+    - autonomous mode
+    - keep working
+  intents:
+    - step away from machine
+    - work autonomously while user is afk
+    - continue task without user input
+    - bounded autonomous loop
+  entities:
+    - "1"
+    - "3"
+    - "5"
+    - "10"
+    - "15"
+    - "30"
+    - "45"
+    - "60"
 ---
 
 # Stepping-Away Mode
