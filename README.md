@@ -33,15 +33,7 @@ If you come back early, just type something — Claude stops the Monitor and res
 ## Install
 
 ```bash
-mkdir -p ~/.claude/skills/stepping-away
-curl -L https://raw.githubusercontent.com/fmhall/stepping-away/main/SKILL.md \
-  -o ~/.claude/skills/stepping-away/SKILL.md
-```
-
-Or clone it:
-
-```bash
-git clone https://github.com/fmhall/stepping-away.git ~/.claude/skills/stepping-away
+npx skills add fmhall/stepping-away
 ```
 
 Then in any Claude Code session, type `/stepping-away 5` and step away.
